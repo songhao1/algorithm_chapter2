@@ -2,10 +2,18 @@
 
 #include<stdio.h>
 
+//int main()
+//{
+//	int a, b;
+//	scanf("%d %d", &a, &b);
+//	printf("%d", a + b);
+//	return 0;
+//}
+
+
 int main()
 {
-	int a, b;
-	scanf("%d %d", &a, &b);
-	printf("%d", a + b);
+	char c1 = 'z', c2 = 'j', c3 = 117;
+	printf("%c%c%c", c1, c2, c3);
 	return 0;
 }
