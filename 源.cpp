@@ -75,10 +75,75 @@
 //}
 
 
-#define ADD(a,b) ((a)+(b))
+//#define ADD(a,b) ((a)+(b))
+//int main()
+//{
+//	int num1 = 3, num2 = 5;
+//	printf("%d", ADD(num1, num2));
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 3, b = 4;
+//	double c = 1.23, d = 0.24;
+//	printf("%d %d\n", a + b, a - b);
+//	printf("%f\n", c * d);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 5, b = 4, c = 5, d = 6;
+//	printf("%d %d %d\n", a / b, a / c, a / d);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 5, b = 3, c = 5;
+//	printf("%d %d\n", a % b, a % c);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 1, b = 1, n1, n2;
+//	n1 = a++;
+//	n2 = ++b;
+//	printf("%d %d\n", n1, a);
+//	printf("%d %d\n", n2, b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 3, b = 5;
+//	int c = a > b ? 7 : 11;
+//	printf("%d\n", c);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int n = 3 * 2 + 1;
+//	int m = (n > 6) && (n < 8);
+//	n = n + 2;
+//	printf("%d %d\n", n, m);
+//	return 0;
+//}
+
+
 int main()
 {
-	int num1 = 3, num2 = 5;
-	printf("%d", ADD(num1, num2));
+	char str[10];
+	scanf("%s", str);
+	printf("%s", str);
 	return 0;
 }
