@@ -364,3 +364,62 @@
 //	}
 //	return 0;
 //}
+
+
+//P34
+//int main() {
+//	int n = 1, sum = 0;
+//	while (n <= 100) {
+//		sum = sum + n;
+//		n++;
+//	}
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
+
+
+//P34
+//int main() {
+//	int n = 12345, count = 0;
+//	while (n) {
+//		count = count + n % 10;
+//		n = n / 10;
+//	}
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+
+//P36
+//int main() {
+//	int i, sum = 0;
+//	for (i = 1; i <= 100; i++) {
+//		sum = sum + i;
+//	}
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
+
+
+//P38
+//int main() {
+//	int n, sum = 0;
+//	for (int i = 1; i <= 100; i++) {
+//		sum = sum + i;
+//		if (sum >= 2000) break;
+//	}
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
+
+
+//P38
+//int main() {
+//	int sum = 0;
+//	for (int i = 1; i <= 5; i++) {
+//		if (i % 2 == 1) continue;
+//		sum = sum + i;
+//	}
+//	printf("sum=%d\n", sum);
+//	return 0;
+//}
