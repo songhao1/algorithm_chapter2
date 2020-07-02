@@ -140,10 +140,19 @@
 //}
 
 
+//int main()
+//{
+//	char str[10];
+//	scanf("%s", str);
+//	printf("%s", str);
+//	return 0;
+//}
+
+
 int main()
 {
-	char str[10];
-	scanf("%s", str);
-	printf("%s", str);
+	int a = 123, b = 1234567;
+	printf("%5d\n", a);
+	printf("%5d\n", b);
 	return 0;
 }
