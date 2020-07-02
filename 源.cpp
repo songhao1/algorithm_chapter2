@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
+#include<math.h>
 
 //int main()
 //{
@@ -149,10 +150,217 @@
 //}
 
 
-int main()
-{
-	int a = 123, b = 1234567;
-	printf("%5d\n", a);
-	printf("%5d\n", b);
-	return 0;
-}
+//int main()
+//{
+//	int a = 123, b = 1234567;
+//	printf("%5d\n", a);
+//	printf("%5d\n", b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int a = 123, b = 1234567;
+//	printf("%05d\n", a);
+//	printf("%05d\n", b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double d1 = 12.3456;
+//	printf("%.0f\n", d1);
+//	printf("%.1f\n", d1);
+//	printf("%.2f\n", d1);
+//	printf("%.3f\n", d1);
+//	printf("%.4f\n", d1);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char c1, c2, c3;
+//	c1 = getchar();
+//	getchar();
+//	c2 = getchar();
+//	c3 = getchar();
+//	putchar(c1);
+//	putchar(c2);
+//	putchar(c3);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db = -12.56;
+//	printf("%.2f\n", fabs(db));
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db1 = -5.2, db2 = 5.2;
+//	printf("%.0f %.0f\n", floor(db1), ceil(db1));
+//	printf("%.0f %.0f\n", floor(db2), ceil(db2));
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db = pow(2.0, 3.0);
+//	printf("%f\n", db);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db = sqrt(2.0);
+//	printf("%f\n", db);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db = log(1.0);
+//	printf("%f\n", db);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	double db1 = round(3.40);
+//	double db2 = round(3.45);
+//	double db3 = round(3.50);
+//	double db4 = round(3.55);
+//	double db5 = round(3.60);
+//	printf("%d,%d,%d,%d,%d\n", (int)db1, (int)db2, (int)db3, (int)db4, (int)db5);
+//	return 0;
+//}
+
+
+//P28
+//int main() {
+//	int n = 5;
+//	if (n > 3) {
+//		n = 9;
+//		printf("%d\n", n);
+//	}
+//	return 0;
+//}
+
+
+//P29
+//int main() {
+//	int n = 2;
+//	if (n > 3) {
+//		n = 9;
+//		printf("%d\n", n);
+//	}
+//	else {
+//		printf("%d\n", n);
+//	}
+//	return 0;
+//}
+
+
+//P29
+//int main() {
+//	int n = 2;
+//	if (n > 3) {
+//		n = 9;
+//		printf("%d\n", n);
+//	}
+//	else if (n > 2) {
+//		printf("%d\n", n+1);
+//	}
+//	else {
+//		printf("%d\n", n);
+//	}
+//	return 0;
+//}
+
+
+//P30
+//int main() {
+//	int n = 0, m = 5;
+//	if (n) {
+//		printf("n is not zero!\n");
+//	}
+//	else {
+//		printf("n is zero!\n");
+//	}
+//	if (m) {
+//		printf("m is not zero!\n");
+//	}
+//	else {
+//		printf("m is zero!\n");
+//	}
+//	return 0;
+//}
+
+
+//P30
+//int main() {
+//	int n = 0, m = 5;
+//	if (!n) {
+//		printf("n is zero!\n");
+//	}
+//	else {
+//		printf("n is not zero!\n");
+//	}
+//	if (!m) {
+//		printf("m is zero!\n");
+//	}
+//	else {
+//		printf("m is not zero!\n");
+//	}
+//	return 0;
+//}
+
+
+//P31
+//int main()
+//{
+//	int n = 3, m = 5;
+//	if (n < 5) {
+//		if (m < 5) {
+//			printf("%d\n", m + n);
+//		}
+//		else {
+//			printf("%d\n", m - n);
+//		}
+//	}
+//	else {
+//		printf("haha\n");
+//	}
+//	return 0;
+//}
+
+
+//P32
+//int main() {
+//	int a = 1, b = 2;
+//	switch (a + b) {
+//	case 2:
+//		printf("%d\n", a);
+//		break;
+//	case 3:
+//		printf("%d\n", b);
+//		break;
+//	case 4:
+//		printf("%d\n", a + b);
+//		break;
+//	default:
+//		printf("sad story\n");
+//	}
+//	return 0;
+//}
