@@ -2,6 +2,7 @@
 
 #include<stdio.h>
 #include<math.h>
+#include<string.h>
 
 //int main()
 //{
@@ -560,3 +561,133 @@
 //	}
 //	return 0;
 //}
+
+
+//P47
+//int main() {
+//	int a[5] = { 1,2,3,4,5 };
+//	memset(a, 0, sizeof(a));
+//	for (int i = 0; i < 5; i++) {
+//		printf("%d ", a[i]);
+//	}
+//	printf("\n");
+//
+//	memset(a, -1, sizeof(a));
+//	for (int i = 0; i < 5; i++) {
+//		printf("%d ", a[i]);
+//	}
+//	printf("\n");
+//	return 0;
+//}
+
+
+//P47
+//int main() {
+//	//char str[15] = { 'G','o','o','d',' ','s','t','o','r','y','!' };
+//	char str[15] = "Good story!";
+//	for (int i = 0; i < 11; i++) {
+//		printf("%c", str[i]);
+//	}
+//	return 0;
+//}
+
+
+//P48
+//int main() {
+//	char str[10];
+//	scanf("%s", str);
+//	printf("%s", str);
+//	return 0;
+//}
+
+
+//P48
+//int main() {
+//	char str[5][5];
+//	for (int i = 0; i < 3; i++) {
+//		for (int j = 0; j < 3; j++) {
+//			str[i][j] = getchar();
+//		}
+//		getchar();
+//	}
+//
+//	for (int i = 0; i < 3; i++) {
+//		for (int j = 0; j < 3; j++) {
+//			putchar(str[i][j]);
+//		}
+//		putchar('\n');
+//	}
+//	return 0;
+//}
+
+
+//P49
+//int main() {
+//	char str1[20];
+//	char str2[5][10];
+//	gets_s(str1);
+//	for (int i = 0; i < 3; i++) {
+//		gets_s(str2[i]);
+//	}
+//	puts(str1);
+//	for (int i = 0; i < 3; i++) {
+//		puts(str2[i]);
+//	}
+//	return 0;
+//}
+
+
+//P51
+//int main() {
+//	char str[10];
+//	gets_s(str);
+//	int len = strlen(str);
+//	printf("%d\n", len);
+//	return 0;
+//}
+
+
+//P51
+//int main() {
+//	char str1[50], str2[50];
+//	gets_s(str1);
+//	gets_s(str2);
+//
+//	int cmp = strcmp(str1, str2);
+//	if (cmp < 0) printf("str1<str2\n");
+//	else if (cmp > 0) printf("str1>str2\n");
+//	else printf("str1==str2\n");
+//	return 0;
+//}
+
+
+//P52
+//int main() {
+//	char str1[50], str2[50];
+//	gets_s(str1);
+//	gets_s(str2);
+//	strcpy(str1, str2);
+//	puts(str1);
+//	return 0;
+//}
+
+
+//P52
+//int main() {
+//	char str1[50], str2[50];
+//	gets_s(str1);
+//	gets_s(str2);
+//	strcat(str1, str2);
+//	puts(str1);
+//	return 0;
+//}
+
+
+//P53
+int main() {
+	int n;
+	char str[100] = "123";
+	sscanf(str, "%d", &n);
+	printf("%d\n", n);
+	return 0;
+}
