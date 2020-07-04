@@ -684,10 +684,147 @@
 
 
 //P53
+//int main() {
+//	int n;
+//	char str[100] = "123";
+//	sscanf(str, "%d", &n);
+//	printf("%d\n", n);
+//	return 0;
+//}
+
+
+//P53
+//int main() {
+//	int n = 233;
+//	char str[100];
+//	sprintf(str, "%d", n);
+//	printf("%s\n", str);
+//	return 0;
+//}
+
+
+//P54
+//int main() {
+//	int n;
+//	double db;
+//	char str[100] = "2048:3.14,hello", str2[100];
+//	sscanf(str, "%d:%lf,%s", &n, &db, str2);
+//	printf("n=%d,db=%.2f,str2=%s\n", n, db, str2);
+//	return 0;
+//}
+
+
+//P54
+//int main() {
+//	int n = 12;
+//	double db = 3.1415;
+//	char str[100], str2[100] = "good";
+//	sprintf(str, "%d:%.2f,%s", n, db, str2);
+//	printf("str=%s\n", str);
+//	return 0;
+//}
+
+
+//PP55
+//void print1() {
+//	printf("Haha,\n");
+//	printf("Good idea!\n");
+//}
+//
+//void print2() {
+//	printf("Ohno,\n");
+//	printf("Bad idea!\n");
+//}
+//
+//int main() {
+//	print1();
+//	print2();
+//	return 0;
+//}
+
+
+//P56
+//int judge(int x) {
+//	if (x > 0) return 1;
+//	else if (x == 0) return 0;
+//	else return -1;
+//}
+//
+//int main() {
+//	int a, ans;
+//	scanf("%d", &a);
+//	ans = judge(a);
+//	printf("%d\n", ans);
+//	return 0;
+//}
+
+
+//P57
+//int x;
+//void change() {
+//	x = x + 1;
+//}
+//
+//int main() {
+//	x = 10;
+//	change();
+//	printf("%d\n", x);
+//	return 0;
+//}
+
+
+//P57
+//void change(int x){
+//	x = x + 1;
+//}
+//
+//int main() {
+//	int x = 10;
+//	change(x);
+//	printf("%d\n", x);
+//	return 0;
+//}
+
+
+//P58
+//int MAX(int a, int b, int c) {
+//	int M;
+//	if (a >= b && a >= c) M = a;
+//	else if (b >= a && b >= c) M = b;
+//	else M = c;
+//	return M;
+//}
+//
+//int main() {
+//	int a, b, c;
+//	scanf("%d,%d,%d", &a, &b, &c);
+//	printf("%d\n", MAX(a, b, c));
+//	return 0;
+//}
+
+
+//P59
+void change(int a[], int b[][5]) {
+	a[0] = 1;
+	a[1] = 3;
+	a[2] = 5;
+	b[0][0] = 1;
+}
+
 int main() {
-	int n;
-	char str[100] = "123";
-	sscanf(str, "%d", &n);
-	printf("%d\n", n);
+	int a[3] = { 0 };
+	int b[5][5] = { 0 };
+	change(a, b);
+	for (int i = 0; i < 3; i++) {
+		printf("%d\n", a[i]);
+	}
+
+	for (int i = 0; i < 5; i++) {
+		for (int j = 0; j < 5; j++) {
+			printf("%d ", b[i][j]);
+		}
+		printf("\n");
+	}
+
 	return 0;
 }
