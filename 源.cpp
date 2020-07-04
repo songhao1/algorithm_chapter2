@@ -804,27 +804,98 @@
 
 
 //P59
-void change(int a[], int b[][5]) {
-	a[0] = 1;
-	a[1] = 3;
-	a[2] = 5;
-	b[0][0] = 1;
-}
+//void change(int a[], int b[][5]) {
+//	a[0] = 1;
+//	a[1] = 3;
+//	a[2] = 5;
+//	b[0][0] = 1;
+//}
+//
+//int main() {
+//	int a[3] = { 0 };
+//	int b[5][5] = { 0 };
+//	change(a, b);
+//	for (int i = 0; i < 3; i++) {
+//		printf("%d\n", a[i]);
+//	}
+//
+//	for (int i = 0; i < 5; i++) {
+//		for (int j = 0; j < 5; j++) {
+//			printf("%d ", b[i][j]);
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
 
-int main() {
-	int a[3] = { 0 };
-	int b[5][5] = { 0 };
-	change(a, b);
-	for (int i = 0; i < 3; i++) {
-		printf("%d\n", a[i]);
-	}
 
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 5; j++) {
-			printf("%d ", b[i][j]);
-		}
-		printf("\n");
-	}
+//P59
+//int max_2(int a, int b) {
+//	if (a > b) return a;
+//	else return b;
+//}
+//
+//int max_3(int a, int b, int c) {
+//	int temp = max_2(a, b);
+//	temp = max_2(temp, c);
+//	return temp;
+//}
+//
+//int main() {
+//	int a, b, c;
+//	scanf("%d,%d,%d", &a, &b, &c);
+//	printf("%d\n", max_3(a, b, c));
+//	return 0;
+//}
 
-	return 0;
-}
+
+//P60
+//int F(int n) {
+//	if (n == 0) return 1;
+//	else return F(n - 1) * n;
+//}
+//
+//int main() {
+//	int n;
+//	scanf("%d", &n);
+//	printf("%d\n", F(n));
+//	return 0;
+//}
+
+
+//P61
+//int main() {
+//	int a = 1;
+//	printf("%d,%d\n", &a, a);
+//	return 0;
+//}
+
+
+//P62
+//int main() {
+//	int a;
+//	int* p = &a;
+//	a = 233;
+//	printf("%d\n", *p);
+//	return 0;
+//}
+
+
+//P63
+//int main() {
+//	int a;
+//	int* p = &a;
+//	*p = 233;
+//	printf("%d,%d\n", *p, a);
+//	return 0;
+//}
+
+
+//P64
+//int main() {
+//	int a[10] = { 1 };
+//	int* p = a;
+//	printf("%d\n", *p);
+//	return 0;
+//}
