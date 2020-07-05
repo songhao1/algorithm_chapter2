@@ -3,6 +3,9 @@
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
+#include<iostream>
+
+using namespace std;
 
 //int main()
 //{
@@ -897,5 +900,184 @@
 //	int a[10] = { 1 };
 //	int* p = a;
 //	printf("%d\n", *p);
+//	return 0;
+//}
+
+
+//P64
+//int main() {
+//	int a[10];
+//	for (int i = 0; i < 10; i++) {
+//		scanf("%d", a + i);
+//	}
+//	for (int i = 0; i < 10; i++) {
+//		printf("%d ", *(a + i));
+//	}
+//	return 0;
+//}
+
+
+//P64
+//int main() {
+//	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	for (int* p = a; p < a + 10; p++) {
+//		printf("%d ", *p);
+//	}
+//	return 0;
+//}
+
+
+//P65
+//int main() {
+//	int a[10] = { 1,4,9,16,25,36,49 };
+//	int* p = a;
+//	int* q = &a[5];
+//	printf("q=%d\n", q);
+//	printf("p=%d\n", p);
+//	printf("q-p=%d\n", q-p);
+//	return 0;
+//}
+
+
+//P65
+//void change(int* p) {
+//	*p = 233;
+//}
+//
+//int main() {
+//	int a = 1;
+//	int* p = &a;
+//	change(p);
+//	printf("%d\n", a);
+//	return 0;
+//}
+
+
+//p66
+//void swap(int* a, int* b) {
+//	int temp = *a;
+//	*a = *b;
+//	*b = temp;
+//}
+//
+//int main() {
+//	int a = 1, b = 2;
+//	int* p1 = &a, * p2 = &b;
+//	swap(p1, p2);
+//	printf("a=%d,b=%d\n", *p1, *p2);
+//	return 0;
+//}
+
+
+//P69
+//void change(int& x) {
+//	x = 1;
+//}
+//
+//int main() {
+//	int x = 10;
+//	change(x);
+//	printf("%d\n", x);
+//	return 0;
+//}
+
+
+//P69
+//void swap(int* &p1, int* &p2) {
+//	int* temp = p1;
+//	p1 = p2;
+//	p2 = temp;
+//}
+//
+//int main() {
+//	int a = 1, b = 2;
+//	int* p1 = &a, * p2 = &b;
+//	swap(p1, p2);
+//	printf("a=%d,b=%d\n", *p1, *p2);
+//	return 0;
+//}
+
+
+//P73
+//struct studentInfo {
+//	int id;
+//	char gender;
+//	studentInfo() {}//用以不初始化就定义结构体变量
+//	studentInfo(char _gender) {
+//		gender = _gender;
+//	}//只初始化gender
+//	studentInfo(int _id, char _gender) {
+//		id = _id;
+//		gender = _gender;
+//	}
+//};
+//
+//int main() {
+//	studentInfo a;
+//	studentInfo b = studentInfo('M');
+//	studentInfo* c = &studentInfo(12345, 'M');
+//
+//	a.id = 1;
+//	a.gender = 'F';
+//	printf("a.id=%d,a.gender=%c\n", a.id, a.gender);
+//
+//	b.id = 2;
+//	printf("b.id=%d,b.gender=%c\n", b.id, b.gender);
+//
+//	printf("c->id=%d,c->gender=%c\n", c->id, c->gender);
+//
+//	c->id = 3;
+//	c->gender = 'F';
+//	printf("c->id=%d,c->gender=%c\n", c->id, c->gender);
+//
+//	return 0;
+//}
+
+
+//P73
+//struct Point {
+//	int x, y;
+//	Point() {}
+//	Point(int _x, int _y) {
+//		x = _x;
+//		y = _y;
+//	}
+//}pt[10];
+//
+//int main() {
+//	int num = 0;
+//	for (int i = 1; i <= 3; i++) {
+//		for (int j = 1; j <= 3; j++) {
+//			pt[num++] = Point(i, j);
+//		}
+//	}
+//
+//	for (int i = 0; i < num; i++) {
+//		printf("%d,%d\n", pt[i].x, pt[i].y);
+//	}
+//	return 0;
+//}
+
+
+//P74
+//int main() {
+//	int n;
+//	cin >> n;
+//	return 0;
+//}
+
+
+//P76
+//const double eps = 1e-8;
+//#define Equ(a,b) ((fabs((a)-(b)))<(eps))
+//
+//int main() {
+//	double db = 1.23;
+//	if (Equ(db, 1.23)) {
+//		printf("true\n");
+//	}
+//	else {
+//		printf("false\n");
+//	}
 //	return 0;
 //}
